@@ -1,0 +1,1 @@
+app.get('/api/cars/:carId', (req, res) => { const carId = req.params.carId; // database query to fetch car details by id const car = { make: 'Toyota', model: 'Camry', year: 2020, color: 'Blue' }; res.json(car); });
