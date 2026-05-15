@@ -1,0 +1,1 @@
+function getCarDetails(carId) { fetch('/api/cars/' + carId).then(response => response.json()).then(data => { document.getElementById('car-make').innerText = data.make; document.getElementById('car-model').innerText = data.model; document.getElementById('car-year').innerText = data.year; document.getElementById('car-color').innerText = data.color; }); }
